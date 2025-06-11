@@ -1,0 +1,295 @@
+/* geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body{
+    background-color: rgb(241, 241, 241);
+    height: 100vh;
+}
+
+.interface-desktop{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h2.titulo{
+    font-size: 40px;
+    color: #521d69;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+/* header */
+
+.barra-topo{
+  height: 100px; /* Altura da barra */
+  background: #979797; /* Cores da barra */
+  width: 100%;
+  align-items: center;
+}
+
+.barra-topo > .interface-desktop{
+    padding: 30px 10px 0 4%;
+}
+
+.barra-topo > .interface-desktop{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+header a{
+    color: #dbdbdb;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.15s;
+}
+
+header a:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #521d69;
+    cursor: pointer;
+    color: aliceblue;
+    border: 0;
+    border-radius: 30px;
+}
+
+header .contato button:hover{
+    color: black;
+    background-color: #ffe600;
+
+}
+
+/* Topo do site */
+
+main{
+    padding: 30px;
+}
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #521d69;
+    font-size: 60px;   
+}
+
+.topo-do-site p{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.topo-do-site p span{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.topo-do-site .imagem-topo-site{
+    border: 2px solid #00000000;
+    border-radius: 20px;
+    overflow: hidden;
+    scale: 1.2;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-conteudo {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.fechar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Sobre Mim */
+
+section.sobre-mim{
+    padding: 40px 4%;
+}
+
+section.sobre-mim .flex{
+    gap: 60px;
+}
+
+.sobre-mim .sobre-mim-box{
+    background-color: #e2e2e2;
+    text-align: justify;
+    color: #521d69;
+    padding: 40px;
+    border-radius: 35px;
+    margin-top: 50px;
+}
+
+.sobre-mim .sobre-mim-box:hover{
+    transform: scale(1.02);
+    box-shadow:  0 0 8px #0000008e;
+}
+
+.sobre-mim .sobre-mim-box i{
+    font-size: 50px;
+    color: #d8c200;
+
+}
+
+.sobre-mim .sobre-mim-box h3{
+    font-size: 30px;
+}
+
+.sobre-mim .sobre-mim-box p{
+    padding: 2%;
+}
+
+/* projetos1 */
+
+.topo-do-site .imagem-projetos{
+    scale: 1;
+}
+
+.interface > .descricao{
+    font-size: 20px;
+    padding: 40px 4%;
+    font-weight: 400;
+    text-align: justify;
+}
+
+/* Galeria */
+
+.txt-topo-site > .introducao-galeria{
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 300px;
+  height: 300px;
+  margin: 40px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.slides {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  transition: 0.6s;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 300px;
+  flex-shrink: 0;
+  transition: 0.6s;
+}
+
+.slide img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.manual-btn {
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.manual-btn:hover {
+  background: white;
+}
+
+.navigation-auto {
+  display: none;
+}
+
+#item1:checked ~ .first {
+  margin-left: 0;
+}
+#item2:checked ~ .first {
+  margin-left: -300px;
+}
+#item3:checked ~ .first {
+  margin-left: -600px;
+}
+#item4:checked ~ .first {
+  margin-left: -900px;
+}
+
+.artes-galeria{
+    gap: 20%;
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}

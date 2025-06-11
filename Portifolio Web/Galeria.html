@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Fonte-->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"><!--icones-->
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio Web</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="barra-topo">
+        <div class="interface-desktop">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="Projetos1.html">Projetos 1</a></li>
+                    <li><a href="Galeria.html">Galeria</a></li>
+                </ul>
+            </nav>
+            <div class="contato">
+                <button onclick="abrirPopup()">Contato</button>
+            </div> <!--contato-->
+        </div><!--interface-->    
+        </div><!--barra-topo-->
+
+    </header>
+
+    <div id="popup-contato" class="popup">
+    <div class="popup-conteudo">
+    <span class="fechar" onclick="fecharPopup()">&times;</span>
+    <h2>Entre em Contato</h2>
+    <p>Você pode me encontrar no LinkedIn:</p>
+    
+    <a href="https://www.linkedin.com/in/davidlcosta/" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-linkedin"></i> Meu perfil no LinkedIn
+    </a>
+    </div>
+    </div>
+
+    <main>
+
+         <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Em Kaliou</h1>
+                        <p class="introducao-galeria">Essas são algumas das pixel arts que eu fiz para um jogo que eu fiz durante o
+                            curso técnico de desenvolvimentos de jogos digitas, "Em Kaliou". O jogo conta com diversos inimigos,
+                            e esses são alguns deles:
+                        </p>
+                    </div><!--texto topo site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section> <!--topo do site-->
+
+
+     <div class="slider">
+
+        <div class="slides">
+            <!--botoes-->
+            <input type="radio" name="item-btn" id="item1">
+            <input type="radio" name="item-btn" id="item2">
+            <input type="radio" name="item-btn" id="item3">
+            <input type="radio" name="item-btn" id="item4">
+
+
+            <div class="slide first">
+                <img src="images\PixelArt1.png" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="images\PixelArt2.png" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="images\PixelArt3.png" alt="Imagem 3">
+            </div>
+            <div class="slide">
+                <img src="images\PixelArt4.png" alt="Imagem 4">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+        </div><!--slides-->
+
+        <div class="manual-navigation">
+            <label for="item1" class="manual-btn"></label>
+            <label for="item2" class="manual-btn"></label>
+            <label for="item3" class="manual-btn"></label>
+            <label for="item4" class="manual-btn"></label>
+        </div>
+
+     </div><!--slider-->
+
+     <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Outros Trabalhos</h1>
+                        <p class="introducao-galeria">Aqui estão algumas das minhas pixel arts mais recentes:
+                        </p>
+                    </div><!--texto topo site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section> <!--topo do site-->
+
+        <div class="artes-galeria">
+            <img src="images\PixelArt5.png" alt="Smoliv Shiny">
+            <img src="images\PixelArt6.png" alt="Sakura Kinomoto">
+        </div>
+
+    </main>
+
+    <script>
+    function abrirPopup() {
+        document.getElementById('popup-contato').style.display = 'flex';
+    }
+
+    function fecharPopup() {
+        document.getElementById('popup-contato').style.display = 'none';
+    }
+    </script>
+
+</body>
